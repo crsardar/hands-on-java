@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_outer_classname = "ServerResponseContainer";
+option java_package = "com.crsardar.handson.java.protobuff.server";
+
+message ServerResponse {
+
+    string time = 1;
+    string serverName = 2;
+    string message = 3;
+}

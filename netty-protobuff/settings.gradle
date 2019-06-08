@@ -1,0 +1,5 @@
+rootProject.name = 'netty-protobuff'
+include 'netty-client'
+include 'netty-server'
+include 'proto-messages'
+

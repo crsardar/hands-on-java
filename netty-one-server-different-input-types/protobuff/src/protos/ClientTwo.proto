@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_outer_classname = "ClientMsgContainerTwo";
+option java_package = "com.crsardar.handson.java.protobuff.client";
+
+message ClientMsgTwo {
+
+    string groupId = 1;
+    string groupName = 2;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_outer_classname = "PersonContainer";
+option java_package = "com.crsardar.handson.java.protobuff";
+
+message Person {
+
+    string firstName = 1;
+    string lastName = 2;
+    string uuid = 3;
+}
