@@ -9,12 +9,13 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
-public class MyNettyClient {
+public class MyNettyClientTwo
+{
 
     private final String serverAdd;
     private final int port;
 
-    public MyNettyClient(String serverAdd, int port) {
+    public MyNettyClientTwo(String serverAdd, int port) {
 
         this.port = port;
         this.serverAdd = serverAdd;
@@ -49,7 +50,7 @@ public class MyNettyClient {
 
     public static void main(String... arg) {
 
-        MyNettyClient myNettyClient = new MyNettyClient("127.0.0.1", 8080);
+        MyNettyClientTwo myNettyClient = new MyNettyClientTwo("127.0.0.1", 8080);
         myNettyClient.start();
 
     }
