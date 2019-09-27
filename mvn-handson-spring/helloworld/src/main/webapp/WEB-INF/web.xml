@@ -6,6 +6,11 @@
 
     <display-name>handson-mvn-sring</display-name>
 
+    <!--
+    You can register an ApplicationContext by using the ContextLoaderListener.
+    The listener inspects the contextConfigLocation parameter. If the parameter does not exist,
+    the listener uses /WEB-INF/applicationContext.xml as a default.
+    -->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
