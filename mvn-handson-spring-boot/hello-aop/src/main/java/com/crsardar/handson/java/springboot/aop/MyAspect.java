@@ -1,9 +1,8 @@
 package com.crsardar.handson.java.springboot.aop;
 
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Pointcut;
-import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.*;
 
 import org.springframework.stereotype.Component;
 
@@ -15,24 +14,32 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyAspect {
 
-    @Pointcut("execution(*  com.crsardar.handson.java.springboot.controller.IRestController.*(..))")
+    @Pointcut("execution(* com.crsardar.handson.java.springboot.controller.IRestController.*(..))")
     public void executionPointcut(){
 
     }
 
-    /* Working Example
+
     @Before("executionPointcut()")
     public void beforeAdvice(){
 
-        System.out.println("\n\n\t" + getClass().getSimpleName() + " : beforeAdvice");
+        System.out.println("\n\n\tMyAspect : beforeAdvice");
     }
-    */
 
+    @AfterThrowing(pointcut="executionPointcut()",
+            throwing="th")
+    public void afterThrowing(JoinPoint joinPoint, Throwable th){
+
+        System.out.println("\n\n\tMyAspect : afterThrowing \n\n");
+
+    }
+
+    /* Working
 
     @Around("executionPointcut()")
     public Object aroundAdvice(ProceedingJoinPoint proceedingJoinPoint){
 
-        System.out.println("\n\n\t" + getClass().getSimpleName() + " : aroundAdvice");
+        System.out.println("\n\n\tMyAspect : aroundAdvice");
 
         String value;
 
@@ -50,5 +57,5 @@ public class MyAspect {
 
         return value;
     }
-
+    */
 }
