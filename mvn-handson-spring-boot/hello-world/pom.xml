@@ -9,10 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>helloworld</artifactId>
-    <modules>
-        <module>../hello-aop</module>
-    </modules>
+    <artifactId>hello-world</artifactId>
 
     <dependencies>
         <dependency>
