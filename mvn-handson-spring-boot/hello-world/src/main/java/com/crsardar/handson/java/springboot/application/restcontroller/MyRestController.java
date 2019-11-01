@@ -15,4 +15,17 @@ public class MyRestController
 
         return "Hello World, Welcome to the world of SpringBoot!";
     }
+
+    boolean infinite = true;
+
+    @RequestMapping(method = RequestMethod.GET, path = "/infinite")
+    public String helloInfinite(){
+
+        while (infinite){
+
+            System.out.println("I am looping....");
+        }
+
+        return "Hello World, Welcome to the world of SpringBoot!";
+    }
 }
