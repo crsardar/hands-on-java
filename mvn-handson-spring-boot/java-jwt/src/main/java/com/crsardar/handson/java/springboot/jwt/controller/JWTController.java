@@ -15,6 +15,8 @@ import java.util.Date;
 @RestController
 public class JWTController {
 
+    private final String MY_SECRET = "Chittaranjan";
+
     @PostMapping("/validate-token-java")
     public User validateToken(@RequestBody final User user){
 
@@ -36,10 +38,6 @@ public class JWTController {
 
         return user;
     }
-
-
-
-    private final String MY_SECRET = "Chittaranjan";
 
     private String validateToken(final String token){
 
