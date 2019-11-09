@@ -13,6 +13,7 @@
         <module>hello-world</module>
         <module>hello-aop</module>
         <module>ssl-https-springboot</module>
+        <module>java-jwt</module>
     </modules>
 
     <properties>
@@ -52,6 +53,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-aop</artifactId>
                 <version>2.1.8.RELEASE</version>
+            </dependency>
+
+            <!-- Jason Web Token -->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>0.9.1</version>
             </dependency>
 
         </dependencies>
