@@ -1,6 +1,6 @@
 Generate A Self Signed Key
 
-    keytool -genkeypair -alias chittaranjan -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore my_key.p12 -validity 3650
+    keytool -genkey -alias chittaranjan -keyalg RSA -keysize 2048 -storetype PKCS12  -validity 365 -keystore my_key.p12
     
 
 Password 
