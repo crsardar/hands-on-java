@@ -13,7 +13,7 @@
     </parent>
 
     <groupId>com.crsardar.java.apache.camel</groupId>
-    <artifactId>hands-on-camel-springboot</artifactId>
+    <artifactId>hello-world-camel-springboot</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
