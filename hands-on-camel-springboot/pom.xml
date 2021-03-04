@@ -33,19 +33,26 @@
         <!-- Camel -->
         <dependency>
             <groupId>org.apache.camel.springboot</groupId>
-            <!-- The camel-spring-boot-bom is a basic BOM that only holds
-            the list of Camel Spring Boot starter JARs. -->
             <artifactId>camel-spring-boot-bom</artifactId>
             <version>${camelVersion}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
         <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jackson</artifactId>
+            <version>${camelVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-servlet-starter</artifactId>
+            <version>${camelVersion}</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.camel.springboot</groupId>
             <artifactId>camel-spring-boot-starter</artifactId>
             <version>${camelVersion}</version>
         </dependency>
-
 
         <!-- Others -->
         <dependency>
