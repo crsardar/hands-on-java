@@ -5,6 +5,4 @@ https://github.com/crsardar/hands-on-java/tree/master/hello-world-camel-springbo
 
 Swagger API at
 
-    http://127.0.0.1:8080/api-docs
-
-Swagger UI is NOT working or I do not know the URL for it.
+    http://127.0.0.1:8080/api-doc

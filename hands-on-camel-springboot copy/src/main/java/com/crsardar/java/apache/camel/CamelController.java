@@ -16,7 +16,7 @@ public class CamelController extends RouteBuilder {
                 .component("servlet")
                 .port(8080)
                 .host("127.0.0.1")
-                .apiContextPath("api-docs")
+                .apiContextPath("api-doc")
                 .apiContextIdPattern("#name#")
                 .apiProperty("api.title", "Test REST API")
                 .apiProperty("api.version", "v1")
