@@ -1,0 +1,18 @@
+camel:
+  rest:
+    port: 8080
+    context-path: /camel
+    enable-cors: true
+    api-context-path: /v1/api-docs
+    api-property.api:
+      title: Beer API with metrics
+      version: v1
+
+server:
+  port: 8080
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /camel/v1/api-docs

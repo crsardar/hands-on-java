@@ -3,8 +3,14 @@ Basic of pache Camel with SpringBoot is at
 https://github.com/crsardar/hands-on-java/tree/master/hello-world-camel-springboot
 
 
+        mvn clean install
+        java -jar target/hands-on-camel-springboot-1.0-SNAPSHOT.jar
+
+
 Swagger API at
 
-    http://127.0.0.1:8080/api-docs
+    http://localhost:8080/camel/v1/api-docs
 
-Swagger UI is NOT working or I do not know the URL for it.
+Swagger UI 
+
+    http://localhost:8080/swagger-ui.html

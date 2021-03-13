@@ -14,13 +14,6 @@ public class CamelController extends RouteBuilder {
 
         restConfiguration()
                 .component("servlet")
-                .port(8080)
-                .host("127.0.0.1")
-                .apiContextPath("api-docs")
-                .apiContextIdPattern("#name#")
-                .apiProperty("api.title", "Test REST API")
-                .apiProperty("api.version", "v1")
-                .apiProperty("cors", "true")
                 .bindingMode(RestBindingMode.json);
 
         rest().post("/order")
